@@ -1,0 +1,93 @@
+{
+	"siteVersion": "1.169.0",
+	"monster": [
+		{
+			"name": "HUMAN APPRENTICE MAGE CR 6 MINION (285 XP)",
+			"source": "",
+			"page": 0,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item studded leather armor|PHB|studded leather}"
+					]
+				}
+			],
+			"hp": {
+				"special": "19"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 8,
+			"dex": 14,
+			"con": 10,
+			"int": 14,
+			"wis": 11,
+			"cha": 10,
+			"skill": {
+				"arcana": "+5"
+			},
+			"passive": 10,
+			"languages": [
+				"Common plus any two languages"
+			],
+			"pbNote": "+3",
+			"trait": [
+				{
+					"name": "Exploit Weakness",
+					"entries": [
+						"When the mage makes or joins an attack that's made with advantage, the attack deals an extra 1 damage per mage who made or joined the attack."
+					]
+				},
+				{
+					"name": "Empower Patron",
+					"entries": [
+						"A non-minion creature serves as the mage's patron in exchange for the mage's protective magic. At the start of the patron's turn, the patron gains temporary hit points equal to twice the number of apprentice mages within 60 feet of them who chose them as a patron and can see them."
+					]
+				},
+				{
+					"name": "Minion",
+					"entries": [
+						"If the mage takes damage from an attack or as the result of a failed saving throw, their hit points are reduced to 0. If the mage takes damage from another effect, they die if the damage equals or exceeds their hit point maximum, otherwise they take no damage."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Lightning Strike (Group Attack)",
+					"entries": [
+						"{@atk rs} {@hit 5} to hit, range 120 ft., one creature. {@h}3 lightning damage, and if this attack was made by more than one mage, each mage who joined the attack picks one creature within 30 feet of the original target.",
+						"Each creature picked takes 3 lightning damage for each mage who targeted them."
+					]
+				},
+				{
+					"name": "Thunder Crack (Group Attack)",
+					"entries": [
+						"{@atk ms} {@hit 5} to hit, reach 5 ft., one target. {@h}3 thunder damage, and the target can't make opportunity attacks until the start of their next turn."
+					]
+				}
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"damageTags": [
+				"L",
+				"T"
+			]
+		}
+	]
+}
